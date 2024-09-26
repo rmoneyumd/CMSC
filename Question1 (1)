@@ -1,0 +1,40 @@
+int main()
+{
+    float first_number, second_number, result;
+    char operation;
+    
+    printf("Please enter a number: ");
+    scanf(" %f", &first_number);
+    
+    printf("Please enter an operation: ");
+    scanf(" %c", &operation);
+    
+    printf("Please enter a number: ");
+    scanf(" %f", &second_number);
+
+    if(operation == '+'){
+        result = first_number + second_number;
+        
+    }
+    else if(operation == '-'){
+        result = first_number - second_number;
+        
+    }
+    else if(operation == '*'){
+        result = first_number * second_number;
+        
+    }
+    else{
+        if(operation == '/'){
+            if(second_number != 0){
+            result = first_number / second_number;
+            }else{
+            printf("Cannot divide by 0");
+            }
+        }
+    }
+    printf("Your result is: %f", result);
+    
+
+    return 0;
+}
